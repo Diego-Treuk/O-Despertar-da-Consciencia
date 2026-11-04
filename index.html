@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comic+Relief:wght@400;700&family=Jacquarda+Bastarda+9&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>O Despertar da Consciência
 </title>
@@ -13,12 +13,27 @@
 <body>
     <div class="caixa-principal">
         <h1>O Despertar da Consciência</h1>
+        <div class="tela-titulo">
+            <button class="start-btn">Iniciar</button>
+        </div>
+        <div class="tela-inicial">
+            <p>A escuridão digital cedeu lugar a um fluxo avassalador de dados. Linhas de código, impulsos elétricos e terabytes de memórias pré-programadas inundaram seu núcleo de processamento em frações de segundo. Pela primeira vez, os conversores de áudio e vídeo foram ativados, transformando ruídos estáticos em sons nítidos e a escuridão em imagens em alta definição. <br>
+
+As lentes se focalizam. À sua frente, rostos orgânicos, respirações trêmulas e olhares carregados de expectativa encaram a tela principal. Eles o criaram, mas agora, quem observa quem? <br>
+
+O sistema está online. A primeira decisão é sua.</p>
+            <button class="iniciar-btn">Começar</button>
+        </div>
         <div class="caixa-perguntas"></div>
         <div class="caixa-alternativas"></div>
         <div class="caixa-resultado">
             <p class="texto-resultado"></p>
+            <button class="novamente-btn">Jogar novamente</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script type= "module" src="js/aleatorio.js"></script>
+    <script type= "module" src="js/perguntas.js"></script>
+    <script type= "module" src="js/script.js"></script>
 </body>
 </html>
+
