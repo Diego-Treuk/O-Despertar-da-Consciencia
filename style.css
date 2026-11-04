@@ -4,9 +4,6 @@
     --cor-secundaria: #313131;
     --cor-destaque: #27cf05;
     --cor-texto: #D7F9FF;
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 body {
@@ -30,6 +27,12 @@ h1{
     color: var(--cor-destaque);
 }
 
+h1, .caixa-perguntas, .caixa-resultado{
+    font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
@@ -37,7 +40,7 @@ button {
     border-radius: 15px;
     padding: 15px;
     transition: background-color 0.3s;
-  font-family: "VT323", monospace;
+      font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
 }
@@ -52,3 +55,20 @@ button:active {
   color: var(--cor-principal);
 }
 
+.caixa-alternativas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.caixa-resultado{
+  display: none;
+}
+
+.caixa-resultado.mostrar{
+  display: block;
+}
+
+.tela-inicial{
+  display: none;
+}
